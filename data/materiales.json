@@ -1,0 +1,64 @@
+{
+    "semanas": [
+        {
+            "numero": 1,
+            "materiales": [
+                {
+                    "dia": "Lunes",
+                    "titulo": "Técnicas avanzadas de reconocimiento y enumeración. Escaneo evadiendo firewalls y WAFs.",
+                    "link": "#"
+                },
+                {
+                    "dia": "Miércoles", 
+                    "titulo": "Explotación avanzada con Metasploit y manual. Payloads personalizados y técnicas de ofuscación.",
+                    "link": "#"
+                },
+                {
+                    "dia": "Viernes",
+                    "titulo": "Post-explotación profesional. Persistencia, movimiento lateral y recolección de credenciales.",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "numero": 2,
+            "materiales": [
+                {
+                    "dia": "Lunes",
+                    "titulo": "Evasión IDS/IPS. Cifrado de tráfico y tunelización (SSH, VPNs, Proxychains).",
+                    "link": "#"
+                },
+                {
+                    "dia": "Miércoles",
+                    "titulo": "Ataques avanzados a redes inalámbricas (WPA3, Evil Twin, Rogue AP).",
+                    "link": "#"
+                },
+                {
+                    "dia": "Viernes",
+                    "titulo": "Red Team vs Blue Team: TTPs. Simulación de ataque real con MITRE ATT&CK.",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "numero": 3,
+            "materiales": [
+                {
+                    "dia": "Lunes",
+                    "titulo": "Seguridad en aplicaciones.",
+                    "link": "#"
+                },
+                {
+                    "dia": "Miércoles",
+                    "titulo": "Seguridad en entornos Cloud (AWS, Azure, GCP). Vulnerabilidades comunes.",
+                    "link": "#"
+                },
+                {
+                    "dia": "Viernes",
+                    "titulo": "Contenedores y Kubernetes. Riesgos y exploits.",
+                    "link": "#"
+                }
+            ]
+        }
+    ]
+}
