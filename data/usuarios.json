@@ -6,6 +6,11 @@
             "nombre": "Andrés"
         },
         {
+      "usuario": "harryestradahuascar@gmail.com",
+      "contrasena": "CursoHarry30!",
+      "nombre": "Diego Sebastian Caicedo Yandun"
+    },
+    {
       "usuario": "caicedodiego15@gmail.com",
       "contrasena": "CursoDiego30!",
       "nombre": "Diego Sebastian Caicedo Yandun"
@@ -67,6 +72,7 @@
     }
     ]
 }
+
 
 
 
