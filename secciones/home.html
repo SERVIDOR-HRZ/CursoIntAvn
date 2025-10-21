@@ -748,23 +748,46 @@
             }
         }
 
+        function getEmbedUrl(url) {
+            if (!url) return '';
+
+            // YouTube watch URL
+            if (url.includes('youtube.com/watch?v=')) {
+                const videoId = url.split('v=')[1].split('&')[0];
+                return `https://www.youtube.com/embed/${videoId}`;
+            }
+            // YouTube short URL
+            else if (url.includes('youtu.be/')) {
+                const videoId = url.split('youtu.be/')[1].split('?')[0];
+                return `https://www.youtube.com/embed/${videoId}`;
+            }
+            // Already embed URL
+            else if (url.includes('youtube.com/embed/')) {
+                return url;
+            }
+            // Other URLs (like Google Drive)
+            else {
+                return url;
+            }
+        }
+
         function seleccionarClase(elemento, videoLink, materialLink) {
-            document.querySelectorAll('.clase-card').forEach(card => 
+            document.querySelectorAll('.clase-card').forEach(card =>
                 card.classList.remove('activa'));
-            
+
             elemento.classList.add('activa');
-            
+
             const videoFrame = document.getElementById('videoActual');
             const materialEnlace = document.getElementById('materialActual');
-            
-            videoFrame.src = videoLink;
-            
+
+            videoFrame.src = getEmbedUrl(videoLink);
+
             // En móviles, hacer scroll al video
             if (window.innerWidth <= 1200) {
                 const contenidoReproduccion = document.getElementById('contenidoReproduccion');
                 contenidoReproduccion.scrollIntoView({ behavior: 'smooth' });
             }
-            
+
             materialEnlace.onclick = (e) => {
                 e.preventDefault();
                 abrirMaterial(materialLink, document.getElementById('nombreUsuario').textContent);
